@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/common_full_open_on_phone"
+            android:title="@string/menu_home" />
+
+
+        <group android:id="@+id/maps_group" android:checkableBehavior="single">
+            <item
+                android:id="@+id/mapsFragment"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:name="com.example.gonav.MapsFragment"
+                android:title="Maps" />
+
+            <item
+                android:id="@+id/categories_group"
+                android:title="Categories"
+                android:icon="@android:drawable/ic_menu_more">
+
+                <menu>
+                    <item
+                        android:id="@+id/CollegeFragment"
+                        android:icon="@drawable/school"
+                        android:name="com.example.gonav.CollegeFragment"
+                        android:title="Colleges" />
+
+                    <item
+                        android:id="@+id/InterestFragment"
+                        android:icon="@android:drawable/btn_star"
+                        android:name="com.example.gonav.InterestFragment"
+                        android:title="Points of Interest" />
+
+                    <item
+                        android:id="@+id/ParkingFragment"
+                        android:icon="@drawable/parking"
+                        android:name="com.example.gonav.ParkingFragment"
+                        android:title="Parking" />
+
+                    <item
+                        android:id="@+id/foodFragment"
+                        android:icon="@android:drawable/ic_menu_myplaces"
+                        android:name="com.example.gonav.foodFragment"
+                        android:title="Facilities" />
+
+                    <item
+                        android:id="@+id/FloorPlanFragment"
+                        android:icon="@android:drawable/ic_menu_edit"
+                        android:name="com.example.gonav.FloorPlanFragment"
+                        android:title="Classroom Map" />
+
+
+                </menu>
+            </item>
+        </group>
+
+
+        <item
+            android:id="@+id/EmergencyHotlineFragment"
+            android:icon="@android:drawable/stat_sys_warning"
+            android:name="com.example.gonav.EmergencyHotlineFragment"
+            android:title="Emergency Hotline" />
+
+        <item
+            android:id="@+id/LegendsFragment"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:name="com.example.gonav.LegendsFragment"
+            android:title="Legends" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:name="com.example.gonav.about"
+            android:title="About (readme)" />
+
+
+
+    </group>
+</menu>

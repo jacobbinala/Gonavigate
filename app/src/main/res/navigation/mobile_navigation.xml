@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gonav.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.gonav.MapsFragment"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/CollegeFragment"
+        android:name="com.example.gonav.CollegeFragment"
+        android:label="Colleges"
+        tools:layout="@layout/fragment_college" />
+
+    <fragment
+        android:id="@+id/ParkingFragment"
+        android:name="com.example.gonav.ParkingFragment"
+        android:label="Parking Areas"
+        tools:layout="@layout/fragment_parking" />
+
+    <fragment
+        android:id="@+id/InterestFragment"
+        android:name="com.example.gonav.InterestFragment"
+        android:label="Points of Interest"
+        tools:layout="@layout/fragment_interest" />
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.gonav.foodFragment"
+        android:label="Facilities"
+        tools:layout="@layout/fragment_food" />
+
+    <fragment
+        android:id="@+id/FloorPlanFragment"
+        android:name="com.example.gonav.FloorPlanFragment"
+        android:label="Classroom Floor Plans"
+        tools:layout="@layout/fragment_floor_plan">
+
+        <argument
+            android:name="building"
+            app:argType="string" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/EmergencyHotlineFragment"
+        android:name="com.example.gonav.EmergencyHotlineFragment"
+        android:label="Emergency"
+        tools:layout="@layout/fragment_emergency_hotline" />
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.gonav.about"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/LegendsFragment"
+        android:name="com.example.gonav.LegendsFragment"
+        android:label="Legends"
+        tools:layout="@layout/fragment_legends" />
+
+
+
+</navigation>
